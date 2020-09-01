@@ -25,7 +25,7 @@ def predict_img(img):
 ## Streamlit app builder
 st.sidebar.title('About') 
 # Info
-st.sidebar.info('This app classifies 6 tyeps of scenes: Buildings, Forest, Glaciers, Mountains, Sea, Street')
+st.sidebar.info('This app classifies 6 types of scenes: Buildings, Forests, Glaciers, Mountains, Sea, Street')
 # File uploader
 uploaded_file = st.sidebar.file_uploader("Choose an image [JPG or PNG]", type=['jpg','png'])
 # run prediction
