@@ -4,7 +4,7 @@ metadata:
     name: sceneclassifier-pod
     labels:
         app: sceneclassifier
-        type: frontend
+        type: front-end
 spec:
     containers:
       - name: sceneclassifier-container

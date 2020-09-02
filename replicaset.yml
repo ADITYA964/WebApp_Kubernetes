@@ -10,7 +10,7 @@ metadata:
 
 # replicaset specs
 spec:
-  template: # pod template
+  template: # pod template, same metadata and spec as pod.yaml
     metadata:
       name: sceneclassifier-pod
       labels:
