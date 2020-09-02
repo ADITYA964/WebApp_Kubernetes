@@ -20,6 +20,8 @@ spec:
         containers:
           - name: sceneclassifier-container
             image: guolin1/sceneclassifier:1.0 # DockerHub
+            ports:
+              - containerPort: 8501
   replicas: 3 # number of pods
   selector:   # selector
     matchLabels:
