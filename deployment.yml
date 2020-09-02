@@ -22,7 +22,11 @@ spec:
             image: guolin1/sceneclassifier:1.0 # DockerHub
             ports:
               - containerPort: 8501
-  replicas: 3 # number of pods
+  replicas: 1 # number of pods to be deployed. 
+              # Unfortunately when there are more than 1 pod running, cross-site request 
+              # forgery (CSRF) protection may prevent user from uploading images for classification.
+              # Hopefully this is something that will be fixed in future streamlit releases. 
+              # To allow multi-replicas, set image to: guolin1/sceneclassifier:1.1 which has csrf protection disabled  
   selector:   # selector
     matchLabels:
       type: front-end
