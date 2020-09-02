@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+    name: SceneClassifier-pod
+    labels:
+        app: SceneClassifier
+        type: frontend
+spec:
+    containers:
+      - name: sceneclassifier-container
+        image: guolin1/sceneclassifier:1.0 # DockerHub
