@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Pod
 metadata:
-    name: SceneClassifier-pod
+    name: sceneclassifier-pod
     labels:
-        app: SceneClassifier
+        app: sceneclassifier
         type: frontend
 spec:
     containers:
