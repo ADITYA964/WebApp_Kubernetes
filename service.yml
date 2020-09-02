@@ -9,7 +9,7 @@ metadata:
    app: sceneclassifier
 spec:
  backend:
-   serviceName: streamlitweb-backend
+   serviceName: sceneclassifier-service
    servicePort: 8501
 ---
 apiVersion: v1
