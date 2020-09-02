@@ -6,7 +6,7 @@ metadata:
    kubernetes.io/ingress.global-static-ip-name: streamlitweb-ip
    networking.gke.io/managed-certificates: streamlit-certificate
  labels:
-   app: sceneclassifier
+   app: streamlit
 spec:
  backend:
    serviceName: streamlitweb-backend
@@ -14,16 +14,15 @@ spec:
 ---
 apiVersion: v1
 kind: Service
-
 metadata:
-  name: sceneclassifier-service
-
+ name: streamlitweb-backend
+ labels:
+   app: streamlit
 spec:
-  type: LoadBalancer
-  ports:
-    - port: 80
-      targetPort: 8501
-      nodePort: 30008
-  selector:
-    app: sceneclassifier
-    type: front-end
+ type: NodePort
+ selector:
+   app: streamlit
+   tier: web
+ ports:
+ - port: 8501
+   targetPort: 8501
