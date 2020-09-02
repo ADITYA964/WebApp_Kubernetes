@@ -2,8 +2,8 @@
 # Turn this to true or comment out
 enableCORS = false
 
-[browser]
+# [browser]
 # Put the URL people will go to here:
 
-[global]
-logLevel="debug"
+# [global]
+# logLevel="debug"
