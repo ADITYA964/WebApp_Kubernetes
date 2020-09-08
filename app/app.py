@@ -27,7 +27,7 @@ st.sidebar.title('About')
 # Info
 st.sidebar.info('This app classifies 6 types of scenes: Buildings, Forests, Glaciers, Mountains, Sea, Street')
 # File uploader
-uploaded_file = st.sidebar.file_uploader("Choose an image [JPG or PNG]", type=['jpg','png'])
+uploaded_file = st.sidebar.file_uploader("Choose an image [JPG or PNG]", type=['jpg','png'], encoding=None)
 # run prediction
 if uploaded_file is not None:
     image = Image.open(uploaded_file)

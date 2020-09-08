@@ -1,10 +1,10 @@
 [server]
 # Turn this to true or comment out
 enableCORS = false
-enableXsrfProtection = false
+# enableXsrfProtection = false
 
 # [browser]
 # Put the URL people will go to here:
 
-# [global]
+[global]
 logLevel = "debug"

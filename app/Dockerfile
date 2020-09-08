@@ -19,4 +19,4 @@ COPY . .
 EXPOSE 8501
 
 # streamlit specific commands for config
-CMD streamlit run app.py
+CMD streamlit run app.py --server.enableXsrfProtection=false
