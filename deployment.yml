@@ -22,7 +22,7 @@ spec:
             image: guolin1/sceneclassifier:1.1.4 # DockerHub
             ports:
               - containerPort: 8501
-  replicas: 5 # number of pods to be deployed. 
+  replicas: 1 # number of pods to be deployed. 
               # if running sceneclassifier:1.0, only 1 replica canrun. When there are more than 1 pod running, cross-site request 
               # forgery (XSRF) protection may prevent user from uploading images for classification.
               # Hopefully this is something that will be fixed in future streamlit releases. 
