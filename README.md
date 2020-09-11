@@ -16,7 +16,7 @@ Requirement: Docker
 
 ### To deploy on kubernetes:
 1. Pull repository using Git:
-    > git clone https://github.com/guolin1/SceneClassifier.git
+    > git clone https://github.com/guolin1/WebApp_Kubernetes.git
 2. Deploy (after CD into SceneClassifier Directory):
     > kubectl create -f deployment.yml -f service.yml
 3. Obtain Access Url:
